@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO 1</title>
+</head>
+<body>
+    <main>
+        <sention>
+            <fieldset> 
+                <legend>Rellene Las Opciones Siguientes</legend>
+                <br /><br />
+                <textarea name="texto" rows="4" cols="40" placeholder="Utilice este cuadro para escribir"></textarea>
+                
+        </sention>
+        <br>
+        <br>
+        <section>
+            Elija una Fecha:  <input type="date" id="start" name="trip-start"
+            value="1950-01-01"
+            min="1950-01-01" max="2004-01-01">
+        </section>
+        <br>
+        <br>
+        <section>
+            <input type="checkbox" name="sexo" value="H" /> Hombre<br>
+            <input type="checkbox" name="sexo" value="M" /> Mujer
+            <br>
+            
+        </section>
+        <section>
+            <p>
+                <label for="n1">¿Qué edad tienes?</label>
+                <!-- El atributo pattern puede actuar como una alternativa para los navegadores que
+                     no implementan el tipo de entrada de número, pero admiten el atributo pattern.
+                     Ten en cuenta que los navegadores que admiten el atributo pattern lo harán
+                     fallar silenciosamente cuando se use con un campo numérico.
+                     Su uso aquí solo actúa como una alternativa -->
+                 <input type="number" min="18" max="100" step="1" id="n1" name="age"
+                       pattern="\d+">
+              </p>
+
+
+        </section>
+        <br>
+        <section>
+            <label for="">Elija una Hora</label>
+           
+           
+        </section>
+        <br>
+        <section>
+            <select name="geofrafia" id="">
+                <option value="">Geografia</option>
+              <option value="zacatecoluca">Zacateluca</option>
+              <option value="san juan nonualco">San Juan Nonualco</option>
+            </select>
+        </section>
+        <br>
+        <section>
+            <p>Instituto:
+                <input type="text" name="instituto" size="40" placeholder="Escriba aqui">
+              
+              Estudios Elegidos:
+                <input type="text" name="estudios" size="40" placeholder="Escriba aqui">
+              </p>
+        </section>
+    
+</fieldset>
+<fieldset> 
+    <legend>Preferencias</legend>
+    <br />
+    <br />
+    <section>
+        Elija una Fecha: <input type="date" name="fecha">
+    </section>
+    <br>
+    <br>
+    <section>
+        <label for="">Elija una Hora</label>
+        <input type="time" />
+    </section>
+    <br>
+    <section>
+        <input type="checkbox" name="sexo" value="H" /> Matematicas<br>
+        <input type="checkbox" name="sexo" value="M" /> Historia<br>
+        <input type="checkbox" name="sexo" value="M" /> Geografia<br>
+        <input type="checkbox" name="sexo" value="M" /> Lenguaje<br>
+        
+    </section>
+    <br>
+    <section>
+        <select name="Monitor LED" id="">
+            <option value="">Monitor LED</option>
+          <option value="zacatecoluca">Monitor CRT</option>
+          <option value="san juan nonualco">Smart TV</option>
+        </select>
+        <br>
+        <section>
+            
+  <input type="radio" name="hm" value="h" required> Java
+  <input type="radio" name="hm" value="m"> Python
+  <input type="radio" name="hm" value="h" required> HTML
+  <input type="radio" name="hm" value="m"> VISUAL BASIC
+  <input type="radio" name="hm" value="h" required> CSS
+ 
+        </section>
+</fieldset>
+<fieldset>
+    <button type="submit">Enviar para Confirmar</button>
+    </fieldset>
+</main>
+</body>
+</html>
